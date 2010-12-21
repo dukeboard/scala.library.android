@@ -16,9 +16,9 @@ This command will push scala dexed library to /data/framework
 
 The script will also print a sed command to add the generated jars in the android BOOTCLASSLOADER
 
-To test your new extended classloader
+To test your new extended classloader.
 
-   cd scala.library.android.tester
+    cd scala.library.android.tester
 
    mvn install
 
