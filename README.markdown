@@ -4,6 +4,7 @@ This project aim to extend the android BOOTCLASSLOADER to support scala applicat
 
   *  Maven
   *  Android SDK
+  *  Rooted android device
 
 How to use it ?
 
