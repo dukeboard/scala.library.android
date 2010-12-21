@@ -1,0 +1,76 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.scala.android</groupId>
+    <artifactId>scala.library.android</artifactId>
+    <packaging>pom</packaging>
+    <name>Scala :: Library :: Android</name>
+    <version>2.8.1</version>
+
+    <properties>
+        <android.platform.version>8</android.platform.version>
+        <android.platform>platforms/android-${android.platform.version}</android.platform>
+        <android.framework.aidl>${android.home}/${android.platform}/framework.aidl</android.framework.aidl>
+        <android.jar>${android.home}/${android.platform}/android.jar</android.jar>
+        <android.tools.aapt>${android.home}/${android.platform}/tools/aapt</android.tools.aapt>
+        <android.tools.dx>${android.home}/${android.platform}/tools/dx</android.tools.dx>
+        <android.tools.adb>${android.home}/tools/adb</android.tools.adb>
+        
+        <data.framework.location>/data/framework</data.framework.location>
+        <scala.version>2.8.1</scala.version>
+        
+        <!-- change to your android dsk path -->
+        <android.home>/Users/ffouquet/Documents/DEV/sdk/android-sdk-mac_86</android.home>
+    </properties>
+
+    <modules>
+        <module>../scala.library.android.base</module>
+        <module>../scala.library.android.collection</module>
+    </modules>
+  	
+    <repositories>
+        <repository>
+            <id>scala-release</id>
+            <url>http://scala-tools.org/repo-releases/</url>
+        </repository>
+    </repositories>
+        
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.6</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <echo>To activate scala in android BOOTCLASSPATH please type in terminal :</echo>
+                                <echo>adb pull /init.rc</echo>
+                                <echo><![CDATA[ sed 's/.*export BOOTCLASSPATH.*/&:\/data\/framework\/scala.library.base.android-${scala.version}.jar:\/data\/framework\/scala.library.collection.android-${scala.version}.jar/' init.rc  > init.rc2 ]]></echo>
+                                <echo>adb push init.rc2 /init.rc</echo>
+                                <echo>reboot</echo>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+      
+      
+</project>
