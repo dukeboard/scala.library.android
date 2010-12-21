@@ -35,4 +35,4 @@ It will install a sample application using Scala into android environnement.
 
 
 
-Disclaimer: I’m not responsible for any damage you may do to your phone by installing this
+*** Disclaimer: I’m not responsible for any damage you may do to your phone by installing this ***
