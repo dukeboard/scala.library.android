@@ -19,10 +19,8 @@ The script will also print a sed command to add the generated jars in the androi
 To test your new extended classloader.
 
     cd scala.library.android.tester
-
-   mvn install
-
-   mvn android:deploy
+    mvn install
+    mvn android:deploy
 
 It will install a sample application using Scala into android environnement.
 
