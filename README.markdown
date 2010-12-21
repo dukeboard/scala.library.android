@@ -9,7 +9,7 @@ How to use it ?
 
     cd scala.library.android
 
-edit the pom.xml with your android sdk path.
+** edit the pom.xml with your android sdk path.
 
     mvn install
 
