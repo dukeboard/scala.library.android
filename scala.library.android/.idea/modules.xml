@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/scala.library.android.iml" filepath="$PROJECT_DIR$/scala.library.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.actor/scala.library.android.actor.iml" filepath="$PROJECT_DIR$/../scala.library.android.actor/scala.library.android.actor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.base/scala.library.android.base.iml" filepath="$PROJECT_DIR$/../scala.library.android.base/scala.library.android.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.collection.base/scala.library.android.collection.base.iml" filepath="$PROJECT_DIR$/../scala.library.android.collection.base/scala.library.android.collection.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.collection.immutable/scala.library.android.collection.immutable.iml" filepath="$PROJECT_DIR$/../scala.library.android.collection.immutable/scala.library.android.collection.immutable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.collection.mutable/scala.library.android.collection.mutable.iml" filepath="$PROJECT_DIR$/../scala.library.android.collection.mutable/scala.library.android.collection.mutable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.collection.parallel/scala.library.android.collection.parallel.iml" filepath="$PROJECT_DIR$/../scala.library.android.collection.parallel/scala.library.android.collection.parallel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.runtime/scala.library.android.runtime.iml" filepath="$PROJECT_DIR$/../scala.library.android.runtime/scala.library.android.runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scala.library.android.util/scala.library.android.util.iml" filepath="$PROJECT_DIR$/../scala.library.android.util/scala.library.android.util.iml" />
+    </modules>
+  </component>
+</project>
+
